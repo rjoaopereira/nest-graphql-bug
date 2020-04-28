@@ -6,13 +6,7 @@ import { gql } from "apollo-server-express";
 
 const query = gql`
   type Query {
-    translations(input: TranslationsInput): [Translations]
-    applications(input: ApplicationsInput): Applications
-    clientRequest(input: ClientRequestInput!): ClientRequest
-    appSummary(input: AppSummaryInput!): AppSummary
-    menu(tenantId: Int!, languages: [String]): Menu
-    tenants: [Tenant]
-    scopes(input: ApplicationTypeInput): [Scope]
+    a(input: string): [String]
   }
 `;
 const typeDefs = [query];
